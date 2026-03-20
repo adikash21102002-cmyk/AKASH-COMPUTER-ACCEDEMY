@@ -1,255 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aditya Computer Academy</title>
-
-<style>
-body{
-margin:0;
-font-family:Arial;
-background:#d9fdd3;
-}
-
-/* TOP BAR */
-.topbar{
-background:black;
-color:white;
-text-align:center;
-padding:5px;
-font-size:14px;
-}
-
-/* HEADER */
-header{
-background:#87CEEB;
-color:white;
-text-align:center;
-padding:15px;
-}
-
-/* NAV */
-nav{
-display:flex;
-justify-content:center;
-gap:20px;
-background:#baf5ba;
-padding:10px;
-}
-
-nav a{
-text-decoration:none;
-color:black;
-font-weight:bold;
-}
-
-/* HERO */
-.hero{
-text-align:center;
-padding:50px;
-}
-
-.btn{
-background:#87CEEB;
-color:white;
-padding:10px 20px;
-border:none;
-margin:5px;
-cursor:pointer;
-}
-
-/* STATS */
-.stats{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-padding:20px;
-}
-
-.stat{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px #ccc;
-}
-
-/* SECTION */
-.section{
-text-align:center;
-padding:30px;
-}
-
-/* COURSES */
-.courses{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.card{
-background:white;
-width:250px;
-margin:10px;
-padding:15px;
-border-radius:10px;
-box-shadow:0 0 10px #ccc;
-}
-
-/* TESTIMONIAL */
-.testimonial{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-}
-
-.test{
-background:white;
-margin:10px;
-padding:15px;
-width:250px;
-border-radius:10px;
-box-shadow:0 0 10px #ccc;
-}
-
-/* TOOL */
-.tool-box{
-background:white;
-margin:20px;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px #ccc;
-}
-
-/* WHATSAPP */
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:green;
-color:white;
-padding:12px 18px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* FOOTER */
-footer{
-background:#87CEEB;
-color:white;
-padding:20px;
-text-align:center;
-}
-</style>
-</head>
-
-<body>
-
-<div class="topbar">
-+91 9305066046 | info@adityacomputer.com
-</div>
-
-<header>
-<h1>Aditya Computer Academy</h1>
-<p>Excellence in Computer Education</p>
-</header>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">Courses</a>
-<a href="#">Tools</a>
-<a href="#">Contact</a>
-</nav>
-
-<div class="hero">
-<h2>Welcome to Aditya Computer Academy</h2>
-<p>Empowering students with quality computer education and practical skills</p>
-<button class="btn">Explore Courses</button>
-<button class="btn">Contact Us</button>
-</div>
-
-<div class="stats">
-<div class="stat">5000+ Students Trained</div>
-<div class="stat">10+ Courses Offered</div>
-<div class="stat">15+ Years Experience</div>
-<div class="stat">95% Success Rate</div>
-</div>
-
-<div class="section">
-<h2>Why Choose Us?</h2>
-<p>Experienced Faculty | Practical Training | Placement Assistance</p>
-</div>
-
 <div class="section">
 <h2>Popular Courses</h2>
+
+<div class="grid">
+
+<!-- ADCA -->
+<div class="card">
+<h3>ADCA</h3>
+<p>Advanced Diploma in Computer Applications</p>
+<p>Comprehensive computer course</p>
+
+<div class="row">
+<span>12 Months</span>
+<span>₹6000</span>
 </div>
 
-<div class="courses">
-<div class="card"><h3>ADCA</h3><p>12 Months</p><p>₹6000</p></div>
-<div class="card"><h3>DCA</h3><p>6 Months</p><p>₹3000</p></div>
-<div class="card"><h3>CCC</h3><p>3 Months</p><p>₹3000</p></div>
-<div class="card"><h3>MS Office</h3><p>2 Months</p><p>₹3000</p></div>
-<div class="card"><h3>Tally Prime</h3><p>2 Months</p><p>₹3000</p></div>
-<div class="card"><h3>DFA</h3><p>6 Months</p><p>₹5000</p></div>
+<a href="adca.html"><button class="btn-dark">View Details</button></a>
 </div>
 
-<div class="section">
-<h2>Student Testimonials</h2>
+<!-- DCA -->
+<div class="card">
+<h3>DCA</h3>
+<p>Diploma in Computer Applications</p>
+<p>Basic computer course</p>
+
+<div class="row">
+<span>6 Months</span>
+<span>₹4000</span>
 </div>
 
-<div class="testimonial">
-<div class="test"><b>Priya Sharma</b><p>Best institute ⭐⭐⭐⭐⭐</p></div>
-<div class="test"><b>Kriti Gaud</b><p>Got job after course 👍</p></div>
-<div class="test"><b>Tannu Pal</b><p>Excellent teaching 👌</p></div>
+<a href="dca.html"><button class="btn-dark">View Details</button></a>
 </div>
 
-<!-- TOOLS -->
-<div class="section"><h2>Smart Tools</h2></div>
+<!-- CCC -->
+<div class="card">
+<h3>CCC</h3>
+<p>Course on Computer Concepts</p>
 
-<div class="tool-box">
-<h3>Resume Builder</h3>
-<input id="name" placeholder="Your Name"><br><br>
-<input id="skills" placeholder="Skills"><br><br>
-<button class="btn" onclick="generatePDF()">Download Resume</button>
+<div class="row">
+<span>3 Months</span>
+<span>₹3000</span>
 </div>
 
-<div class="tool-box">
-<h3>Typing Speed Test</h3>
-<textarea id="input" rows="4"></textarea>
-<p id="result"></p>
+<a href="ccc.html"><button class="btn-dark">View Details</button></a>
 </div>
 
-<a class="whatsapp" href="https://wa.me/919305066046">WhatsApp</a>
+<!-- TALLY -->
+<div class="card">
+<h3>Tally Prime</h3>
 
-<footer>
-<p>Near City Center, Main Road</p>
-<p>📞 9305066046</p>
-<p>© 2025 Aditya Computer Academy</p>
-</footer>
+<div class="row">
+<span>2 Months</span>
+<span>₹3000</span>
+</div>
 
-<script>
-function generatePDF(){
-let name=document.getElementById("name").value;
-let skills=document.getElementById("skills").value;
-let win=window.open();
-win.document.write("<h1>"+name+"</h1><p>"+skills+"</p>");
-win.print();
-}
+<a href="tally.html"><button class="btn-dark">View Details</button></a>
+</div>
 
-let startTime;
-document.getElementById("input").addEventListener("focus",()=>{
-startTime=new Date();
-});
-
-document.getElementById("input").addEventListener("input",()=>{
-let time=(new Date()-startTime)/1000;
-let words=document.getElementById("input").value.split(" ").length;
-let speed=Math.round(words/time*60);
-document.getElementById("result").innerText="Speed: "+speed+" WPM";
-});
-</script>
-
-</body>
-</html>
+</div>
+</div>
