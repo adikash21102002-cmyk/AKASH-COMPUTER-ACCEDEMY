@@ -4,35 +4,105 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aditya Computer Academy</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:Arial;background:#e8ffe8;}
-.topbar{background:black;color:white;padding:8px 20px;display:flex;justify-content:space-between;}
-header{background:white;padding:15px;font-size:22px;font-weight:bold;}
-.section{padding:30px;text-align:center;}
-.grid{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
-.card{background:white;padding:20px;border-radius:12px;width:260px;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:0.3s;}
-.card:hover{transform:translateY(-8px);}
-.row{display:flex;justify-content:space-between;margin:10px 0;}
-.btn-dark{background:#111;color:white;padding:12px;width:100%;border:none;border-radius:8px;}
-.hero{text-align:center;padding:50px;background:linear-gradient(to right,#d4ffd4,#cceeff);}
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f5fff5;
+}
+
+/* NAVBAR */
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:15px 30px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+font-size:20px;
+font-weight:bold;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(to right,#d4ffd4,#cceeff);
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.btn{
+padding:12px 25px;
+border:none;
+border-radius:6px;
+margin:10px;
+cursor:pointer;
+}
+
+.btn1{background:#00c853;color:white;}
+.btn2{background:#0288d1;color:white;}
+
+/* CARDS */
+.section{
+padding:40px;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+text-align:left;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.row{
+display:flex;
+justify-content:space-between;
+margin:10px 0;
+}
+
+.view{
+width:100%;
+background:#111;
+color:white;
+padding:12px;
+border:none;
+border-radius:6px;
+}
 </style>
 </head>
 
 <body>
 
-<div class="topbar">
-<span>+91 9305066046</span>
-<span>info@adityacomputer.com</span>
+<div class="navbar">
+<div class="logo">Aditya Computer Academy</div>
 </div>
 
-<header><i class="fa fa-graduation-cap"></i> Aditya Computer Academy</header>
-
 <div class="hero">
-<h1>Welcome to Aditya Computer Academy</h1>
+<h1>Excellence in Computer Education</h1>
 <p>Empowering students with quality computer education</p>
-<a href="form.html"><button class="btn-dark">Apply Now</button></a>
+
+<button class="btn btn1">Explore Courses</button>
+<button class="btn btn2">Contact Us</button>
 </div>
 
 <div class="section">
@@ -42,26 +112,30 @@ header{background:white;padding:15px;font-size:22px;font-weight:bold;}
 
 <div class="card">
 <h3>ADCA</h3>
+<p>Advanced Diploma in Computer Applications</p>
 <div class="row"><span>12 Months</span><span>₹6000</span></div>
-<a href="adca.html"><button class="btn-dark">View Details</button></a>
+<a href="adca.html"><button class="view">View Details</button></a>
 </div>
 
 <div class="card">
 <h3>DCA</h3>
+<p>Diploma in Computer Applications</p>
 <div class="row"><span>6 Months</span><span>₹4000</span></div>
-<a href="dca.html"><button class="btn-dark">View Details</button></a>
+<a href="dca.html"><button class="view">View Details</button></a>
 </div>
 
 <div class="card">
 <h3>CCC</h3>
+<p>Course on Computer Concepts</p>
 <div class="row"><span>3 Months</span><span>₹3000</span></div>
-<a href="ccc.html"><button class="btn-dark">View Details</button></a>
+<a href="ccc.html"><button class="view">View Details</button></a>
 </div>
 
 <div class="card">
 <h3>Tally</h3>
+<p>Accounting with GST</p>
 <div class="row"><span>2 Months</span><span>₹3000</span></div>
-<a href="tally.html"><button class="btn-dark">View Details</button></a>
+<a href="tally.html"><button class="view">View Details</button></a>
 </div>
 
 </div>
